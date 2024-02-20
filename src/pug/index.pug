@@ -1,14 +1,59 @@
 doctype html
-html(lang="en")
+html(lang="ru")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title ProKino
+    meta(name="description", content="ProKino")
     link(rel="stylesheet", href="css/index.min.css")
     script(src="js/index.min.js" defer) 
   body.page 
-    header.header 
+    header.header
+      div.container.header__container
+        img.header__logo(src="img/sprite.svg#logo", width="165", height="36", alt="Логотип ПРО КИНО")
+        a.header__link(href="#trailers") Смотреть трейлер
     main.main
-      div.container 
-        h1 Hello World
-    footer.footer 
+      section.hero 
+        div.container.hero__container
+          h1.hero__title Hello World
+          picture.hero__banner-picture
+            source.hero__banner-img(srcset="img/description.webp", type="image/webp")
+            source.hero__banner-img(srcset="img/description.avif", type="image/avif")
+            img.hero__banner-img(src="img/description.png", alt="Avatar the last AIRBENDER")
+          p.hero__date
+            time.hero__description(datetime="2024-02-22") 22 Февраля
+          a.hero__arrow(href="#about")
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="31.5" stroke="white"/>
+              <path d="M20.1921 26.4547C20.1921 26.2532 20.2718 26.0469 20.4265 25.8922C20.7359 25.5828 21.2421 25.5828 21.5515 25.8922L32.1406 36.4813L42.575 26.0469C42.8843 25.7375 43.3906 25.7375 43.7 26.0469C44.0093 26.3563 44.0093 26.8625 43.7 27.1719L32.7031 38.1735C32.3937 38.4828 31.8875 38.4828 31.5781 38.1735L20.4265 27.0219C20.2671 26.8625 20.1921 26.661 20.1921 26.4547Z" fill="white"/>
+            </svg>
+      section.about#about
+        div.container.about__container
+          h1.about__title Аватар: Легенда об Аанге
+          p.about__description Сюжет рассказывает о мальчике из племени воздушных кочевников, Аанге, способном покорять стихию воздуха. В возрасте 11 лет, он узнал, что он Аватар — властелин четырёх стихий. Мир погряз в многолетней войне нации Огня против остального мира, в котором определённые люди способны покорять одну из четырёх стихий — воду, землю, огонь или воздух. Аанг — единственный, кто способен покорить все элементы и будучи Аватаром, он должен спасти мир от уничтожения нацией Огня. Со своими новыми друзьями, Катарой и Соккой, Аанг отправляется овладевать стихиями, попутно их преследует изгнанный принц нации Огня — Зуко, который хочет вернуть себе честь, поймав Аватара.
+          picture.about-picture
+            source.about-img(srcset="img/about-img.webp", type="image/webp")
+            source.about-img(srcset="img/about-img.avif", type="image/avif")
+            img.about-img(src="img/about-img.png", alt="")
+      section.trailers#trailers
+        div.container.trailers__container
+          ul.trailers__buttons 
+            li.trailers__item-button
+              button.trailers__button.trailers__button_active трейлер 1
+            li.trailers__item-button
+              button.trailers__button трейлер 2
+            li.trailers__item-button
+              button.trailers__button трейлер 3
+          ul.trailers__list
+            li.trailers__item
+              div.trailers__wrapper
+                <iframe class="trailers__video" width="560" height="315" src="https://www.youtube.com/embed/9G6-6vpY9oE" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    footer.footer
+      div.container.footer__container
+        ul.footer__developers 
+          li.footer__developer Designer: 
+            a.footer__link(href="https://t.me/mrshmallowww") Anastasia Ilina
+          li.footer__developer Developer: 
+            a.footer__link(href="https://t.me/Alex_kav") Aleksey Konstantinov
+        p.footer__copyrayte © ПРОКИНО, 2024 
+        img.footer__logo(src="img/sprite.svg#footer-logo", width="287", height="62", alt="Логотип ПРО КИНО")
