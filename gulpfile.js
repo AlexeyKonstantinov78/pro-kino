@@ -14,7 +14,7 @@ import gulppug from 'gulp-pug';
 import prettyHtml from 'gulp-pretty-html';
 
 // css
-import sass from 'sass';
+import * as sass from 'sass';
 import gulpSass from 'gulp-sass';
 const compSass = gulpSass(sass);
 
@@ -320,7 +320,7 @@ export const server = () => {
   });
 
   gulp.watch(path.watch.html, html);
-  // gulp.watch(path.watch.pug, pug);
+  gulp.watch(path.watch.pug, pug);
   gulp.watch(path.watch.css, scss);
   gulp.watch(path.watch.js, js);
   gulp.watch(path.watch.svg, svg);
@@ -341,7 +341,7 @@ const develop = (ready) => {
   ready();
 };
 
-export const base = gulp.parallel(html, scss, js, img, svg, webp, avif, copy);
+export const base = gulp.parallel(pug, scss, js, img, svg, webp, avif, copy);
 
 export const build = gulp.series(clear, base, critCSS);
 

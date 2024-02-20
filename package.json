@@ -40,5 +40,8 @@
     "sass": "^1.64.2",
     "webpack": "^5.88.2",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
