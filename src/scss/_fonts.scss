@@ -9,3 +9,11 @@
 @font-face {
   @include font(Montserrat, 700)
 }
+
+@font-face {
+  @include font("inter-v13-cyrillic_latin", 600);
+}
+
+@font-face {
+  @include font("inter-v13-cyrillic_latin", 400)
+}

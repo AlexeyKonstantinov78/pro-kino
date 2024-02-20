@@ -12,16 +12,20 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: "inter-v13-cyrillic_latin",
+    Arial,
+    sans-serif;
   line-height: 1.3;
   font-size: 12px;
   font-weight: 400;
-  color: $white; /*цвет под ваш проект*/
-  background-color: $black; /*цвет под ваш проект*/
-  background-image: url(../img/sprite.svg#fire);
-  background-position: center top 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  color: $black;
+  /*цвет под ваш проект*/
+  // background-color: $black;
+  /*цвет под ваш проект*/
+  // background-image: url(../img/sprite.svg#fire);
+  // background-position: center top 50%;
+  // background-repeat: no-repeat;
+  // background-size: cover;
 }
 
 
@@ -79,20 +83,20 @@ iframe {
   margin: 0 auto;
 }
 
-@include tablet {
-  body {
-    background-color: red;
-  }
-}
+// @include tablet {
+//   body {
+//     background-color: red;
+//   }
+// }
 
-@include laptop {
-  body {
-    background-color: green;
-  }
-}
+// @include laptop {
+//   body {
+//     background-color: green;
+//   }
+// }
 
-@include desktop {
-  body {
-    background-color: blue;
-  }
-}
+// @include desktop {
+//   body {
+//     background-color: blue;
+//   }
+// }
