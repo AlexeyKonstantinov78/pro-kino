@@ -214,9 +214,9 @@ export const img = () =>
             '--quality',
             'medium',
             '--min',
-            40,
+            70,
             '--max',
-            80,
+            85,
           ],
           mozjpeg: ['-optimize', '-progressive'],
           gifsicle: ['--optimize'],
@@ -255,7 +255,7 @@ export const webp = () =>
     .src(path.src.imgF)
     .pipe(
       gulpWebp({
-        quality: dev ? 100 : 60,
+        quality: dev ? 100 : 85,
       }),
     )
     .pipe(gulp.dest(path.dist.img))
@@ -270,7 +270,7 @@ export const avif = () =>
     .src(path.src.imgF)
     .pipe(
       gulpAvif({
-        quality: dev ? 100 : 50,
+        quality: dev ? 100 : 85,
       }),
     )
     .pipe(gulp.dest(path.dist.img))
