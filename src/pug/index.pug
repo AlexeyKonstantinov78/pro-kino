@@ -31,12 +31,22 @@ html(lang="ru")
             </svg>
       section.about#about
         div.container.about__container
-          h1.about__title Аватар: Легенда об Аанге
-          p.about__description Сюжет рассказывает о мальчике из племени воздушных кочевников, Аанге, способном покорять стихию воздуха. В возрасте 11 лет, он узнал, что он Аватар — властелин четырёх стихий. Мир погряз в многолетней войне нации Огня против остального мира, в котором определённые люди способны покорять одну из четырёх стихий — воду, землю, огонь или воздух. Аанг — единственный, кто способен покорить все элементы и будучи Аватаром, он должен спасти мир от уничтожения нацией Огня. Со своими новыми друзьями, Катарой и Соккой, Аанг отправляется овладевать стихиями, попутно их преследует изгнанный принц нации Огня — Зуко, который хочет вернуть себе честь, поймав Аватара.
-          picture.about-picture
-            source.about-img(srcset="img/about-img.webp", type="image/webp")
-            source.about-img(srcset="img/about-img.avif", type="image/avif")
-            img.about-img(src="img/about-img.png", alt="")
+          div.about__content
+            h2.about__title Аватар: Легенда об Аанге
+            p.about__description Сюжет рассказывает о&nbsp;мальчике из&nbsp;племени воздушных кочевников, Аанге, способном покорять стихию воздуха. В&nbsp;возрасте 11&nbsp;лет, он&nbsp;узнал, что он&nbsp;Аватар&nbsp;&mdash; властелин четырёх стихий. Мир погряз в&nbsp;многолетней войне нации Огня против остального мира, в&nbsp;котором определённые люди способны покорять одну из&nbsp;четырёх стихий&nbsp;&mdash; воду, землю, огонь или воздух. Аанг&nbsp;&mdash; единственный, кто способен покорить все элементы и&nbsp;будучи Аватаром, он&nbsp;должен спасти мир от&nbsp;уничтожения нацией Огня. Со&nbsp;своими новыми друзьями, Катарой и&nbsp;Соккой, Аанг отправляется овладевать стихиями, попутно их&nbsp;преследует изгнанный принц нации Огня&nbsp;&mdash; Зуко, который хочет вернуть себе честь, поймав Аватара.
+            picture.about__picture
+              source(type="image/webp", media="(max-width: 320px)", srcset="img/aang320.webp")
+              source(type="image/avjf", media="(max-width: 320px)", srcset="img/aang320.avif")
+              source(type="image/jpg", media="(max-width: 320px)", srcset="img/aang320.jpg")
+              source(type="image/webp", media="(max-width: 768px)", srcset="img/aang768.webp")
+              source(type="image/avjf", media="(max-width: 768px)", srcset="img/aang768.avif")
+              source(type="image/jpg", media="(max-width: 768px)", srcset="img/aang768.jpg")
+              source(type="image/webp", media="(max-width: 1024px)", srcset="img/aang1024.webp")
+              source(type="image/avjf", media="(max-width: 1024px)", srcset="img/aang1024.avif")
+              source(type="image/jpg", media="(max-width: 1024px)", srcset="img/aang1024.jpg")
+              source(srcset="img/aang.webp", type="image/webp")
+              source(srcset="img/aang.avif", type="image/avif")
+              img.about__img(src="img/aang.jpg", alt="Аанг на Аппе")
       section.trailers#trailers
         div.container.trailers__container
           ul.trailers__buttons 
