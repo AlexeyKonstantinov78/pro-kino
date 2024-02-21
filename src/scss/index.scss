@@ -2,5 +2,9 @@
 @import 'fonts';
 @import 'normalize';
 @include normalize();
-@import 'lib/normalize';
 @import 'default';
+@import 'header';
+@import 'hero';
+@import 'about';
+@import 'trailers';
+@import 'footer';

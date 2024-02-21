@@ -1,0 +1,30 @@
+.about {
+  padding: 60px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+  }
+
+  &__content {
+    flex-basis: 750px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 52px;
+    margin-bottom: 32px;
+  }
+
+  &__description {
+    font-size: 20px;
+  }
+
+  &__picture {
+    flex-basis: 530px;
+  }
+
+  &__img {}
+}

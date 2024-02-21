@@ -14,21 +14,18 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   min-height: 100vh;
-  font-family: "inter-v13-cyrillic_latin",
-    Arial,
-    sans-serif;
+  font-family: "inter-v13-cyrillic_latin", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
-  line-height: 1.2;
+  line-height: 1.5;
   font-size: 16px;
   font-weight: 400;
   color: $white;
-
   /*цвет под ваш проект*/
-  background-color: $black;
+  background-color: $background;
   /*цвет под ваш проект*/
   // background-image: url(../img/sprite.svg#fire);
   // background-position: center top 50%;
@@ -36,16 +33,22 @@ body {
   // background-size: cover;
 }
 
-
-img {
+img,
+svg {
+  display: block;
   max-width: 100%;
   height: auto;
 }
 
+svg {
+  max-height: 100%;
+}
 
 button {
   padding: 0;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 a {
@@ -90,8 +93,8 @@ iframe {
 }
 
 .container {
-  max-width: 1324px;
-  padding: 0 12px;
+  max-width: 1432px;
+  padding: 0 66px;
   margin: 0 auto;
 }
 

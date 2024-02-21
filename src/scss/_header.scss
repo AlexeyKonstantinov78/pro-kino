@@ -1,0 +1,43 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  &__logo {}
+
+  &__link {
+    border: 1px solid transparent;
+    border-radius: 52px;
+    padding: 14px 20px;
+    background-color: #ff3d00;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: background-color 0.36s;
+
+    &:hover {
+      background-color: #ff521b;
+      transition: background-color 0.36s;
+    }
+
+    &:focus {
+      border-color: #fff;
+      background-color: #ff521b;
+    }
+
+    &[disabled] {
+      background-color: #272928;
+    }
+  }
+}

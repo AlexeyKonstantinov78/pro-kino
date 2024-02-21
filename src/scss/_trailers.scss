@@ -1,0 +1,51 @@
+.trailers {
+  padding: 60px 0 120px;
+
+  &__container {}
+
+  &__buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-bottom: 16px;
+  }
+
+  &__item-button {}
+
+  &__button {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $white;
+    border-radius: 8px;
+    padding: 14px 20px;
+    background-color: #272928;
+
+    &:hover,
+    &:focus {
+      background-color: #ff521b;
+    }
+
+    &_active {
+      background-color: #ff3d00;
+    }
+  }
+
+  &__list {}
+
+  &__item {}
+
+  &__wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  &__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

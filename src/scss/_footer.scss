@@ -1,0 +1,41 @@
+.footer {
+  padding: 40px 0;
+  background-color: #101010;
+  line-height: 1.4;
+
+  &__container {
+    display: grid;
+    grid-template-areas:
+      "developers logo"
+      "copyrigt logo";
+    gap: 36px;
+  }
+
+  &__developers {
+    grid-area: developers;
+  }
+
+  &__developer:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+  &__link {
+    transition: color 0.36s;
+
+    &:hover {
+      color: #ff521b;
+      transition: color 0.36s;
+    }
+  }
+
+  &__copyrayte {
+    grid-area: copyrigt;
+  }
+
+  &__logo {
+    grid-area: logo;
+    justify-self: end;
+    align-self: end;
+    width: 287px;
+  }
+}
