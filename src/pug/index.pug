@@ -5,6 +5,8 @@ html(lang="ru")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title ProKino
     meta(name="description", content="ProKino")
+    link(rel="shortcut icon", type="image/x-png", href="img/favicon.png")
+    //- link(rel="icon", type="image/svg+xml", href="img/sprite.svg#favicon")
     link(rel="stylesheet", href="css/index.min.css")
     script(src="js/index.min.js" defer) 
   body.page 
@@ -15,7 +17,7 @@ html(lang="ru")
     main.main
       section.hero 
         div.container.hero__container
-          h1.hero__title Hello World
+          h1.hero__title.visually-hidden Avatar the last AIRBENDER
           picture.hero__banner-picture
             source.hero__banner-img(srcset="img/description.webp", type="image/webp")
             source.hero__banner-img(srcset="img/description.avif", type="image/avif")
