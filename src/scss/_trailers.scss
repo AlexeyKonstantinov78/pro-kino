@@ -1,13 +1,45 @@
 .trailers {
   padding: 60px 0 120px;
 
-  &__container {}
+  @media (width<=1080px) {
+    padding: 50px 0 100px;
+  }
+
+  @media (width<=900px) {
+    padding: 40px 0 80px;
+  }
+
+  @media (width<=620px) {
+    padding: 30px 0 60px;
+  }
+
+  &__container {
+    @media (width<=620px) {
+      padding: 0;
+    }
+  }
 
   &__buttons {
     display: flex;
     gap: 12px;
     align-items: center;
     padding-bottom: 16px;
+
+    @media (width<=900px) {
+      gap: 8px;
+    }
+
+    @media (width<=620px) {
+      padding: 0 16px;
+      overflow-x: scroll;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      margin-bottom: 12px;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
   }
 
   &__item-button {}
@@ -20,6 +52,12 @@
     border-radius: 8px;
     padding: 14px 20px;
     background-color: #272928;
+    white-space: nowrap;
+
+    @media (width<=900px) {
+      font-size: 12px;
+      padding: 10px 16px;
+    }
 
     &:hover,
     &:focus {
@@ -31,7 +69,11 @@
     }
   }
 
-  &__list {}
+  &__list {
+    @media (width<=620px) {
+      padding: 0 16px;
+    }
+  }
 
   &__item {}
 

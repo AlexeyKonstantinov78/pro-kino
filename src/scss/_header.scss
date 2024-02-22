@@ -5,6 +5,11 @@
   right: 0;
   z-index: 10;
 
+  @media (width <=620px) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -13,7 +18,15 @@
     padding-bottom: 24px;
   }
 
-  &__logo {}
+  &__logo {
+    @media (width <=900px) {
+      width: 130px;
+    }
+
+    @media (width <=620px) {
+      width: 80px;
+    }
+  }
 
   &__link {
     border: 1px solid transparent;
@@ -25,6 +38,10 @@
     text-transform: uppercase;
     outline: none;
     transition: background-color 0.36s;
+
+    @media (width <=620px) {
+      display: none;
+    }
 
     &:hover {
       background-color: #ff521b;
