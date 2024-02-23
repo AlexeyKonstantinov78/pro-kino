@@ -26,7 +26,7 @@ const createListTrailers = (parrent, list) => {
     ul.append(li);
 
     const idVideo = src.match(/\/embed\/([^/\?]+)/)[1];
-
+    console.dir(iframe);
     iframe.srcdoc = `
       <style>
         * {
@@ -69,7 +69,7 @@ const createListTrailers = (parrent, list) => {
           }
         }
       </style>
-      <a href="https://www.youtube.com/embed/${idVideo}">
+      <a href="https://www.youtube.com/embed/${idVideo}?autoplay=1">
         <img src="https://img.youtube.com/vi/${idVideo}/maxresdefault.jpg">
         <div id="button">
           <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
