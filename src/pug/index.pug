@@ -3,7 +3,7 @@ html(lang="ru")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title ProKino
+    title ПРО КИНО - Автар: легенда об Анге
     meta(name="description", content="ProKino")
     link(rel="shortcut icon", type="image/x-png", href="img/favicon.png")
     link(rel="preload", href="fonts/inter-v13-cyrillic_latin-400.woff2", as="font" crossorigin)
@@ -53,15 +53,15 @@ html(lang="ru")
         div.container.trailers__container
           ul.trailers__buttons 
             li.trailers__item-button
-              button.trailers__button.trailers__button_active трейлер 1
+              button.trailers__button.trailers__button_active(data-src="https://www.youtube.com/embed/9G6-6vpY9oE") трейлер 1
             li.trailers__item-button
-              button.trailers__button трейлер 2
+              button.trailers__button(data-src="https://www.youtube.com/embed/isOuhrJzUMg") трейлер 2
             li.trailers__item-button
-              button.trailers__button трейлер 3
-          ul.trailers__list
-            li.trailers__item
-              div.trailers__wrapper
-                <iframe class="trailers__video" width="560" height="315" src="https://www.youtube.com/embed/9G6-6vpY9oE" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              button.trailers__button(data-src="https://www.youtube.com/embed/aVclaOeuPmM") трейлер 3
+          //- ul.trailers__list
+          //-   li.trailers__item
+          //-     div.trailers__wrapper
+          //-       <iframe class="trailers__video" width="560" height="315" src="https://www.youtube.com/embed/9G6-6vpY9oE" title="YouTube video player"></iframe>
     footer.footer
       div.container.footer__container
         ul.footer__developers 
